@@ -1,0 +1,138 @@
+/* USTAWIENIA OGÓLNE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #263445;
+    text-align: center;
+}
+
+/* NAGŁÓWKI */
+h1 {
+    font-size: 36px;
+    margin: 40px 0 30px;
+    color: #243b55;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+/* NAWIGACJA */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    margin: 20px auto 30px;
+}
+
+.nav-button {
+    display: inline-block;
+    width: auto;
+    min-width: 130px;
+    padding: 15px 25px;
+    background: #4776e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: #345ac0;
+    transform: scale(1.05);
+}
+
+/* LINKI DO ARKUSZY */
+a:not(.nav-button) {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px 22px;
+    background: white;
+    color: #345ac0;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+a:not(.nav-button):hover {
+    background: #4776e6;
+    color: white;
+}
+
+/* INFORMACJA */
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* TELEFONY */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin: 35px 0;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.7;
+        padding: 20px;
+    }
+
+    /* Przyciski obok siebie */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-button {
+        font-size: 20px;
+        padding: 18px 22px;
+    }
+
+    /* Linki do arkuszy */
+    a:not(.nav-button) {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        margin: 10px 4px;
+        padding: 20px 15px;
+        font-size: 21px;
+    }
+}

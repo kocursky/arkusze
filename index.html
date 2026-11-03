@@ -3,6 +3,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Arkusze</title>
 </head>
 <body>
@@ -13,6 +14,7 @@
     <button onclick="sprawdzHaslo()">Zatwierdź</button>
 
     <p id="komunikat"></p>
+    <p>Jeżeli hasło zostanie udostępnione osobom trzecim, hasło zostaniego dezaktywowane!</p>
 
     <script>
         function sprawdzHaslo() {
@@ -20,7 +22,8 @@
 
             const strony = {
                 "drg9Oe*J9NXR3T@T": "wybor_arkuszy.html",
-                "jH!15hAVlZ_,]T4-_(N_S)": "wybor_arkuszy.html"
+                "jH!15hAVlZ_,]T4-_(N_S)": "wybor_arkuszy.html",
+                "admin": "notfound.html"
             };
 
             if (strony[haslo]) {
