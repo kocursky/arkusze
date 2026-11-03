@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arkusze</title>
+</head>
+<body>
+
+    <h2>Wpisz hasło</h2>
+
+    <input type="password" id="haslo" placeholder="Hasło...">
+    <button onclick="sprawdzHaslo()">Zatwierdź</button>
+
+    <p id="komunikat"></p>
+
+    <script>
+        function sprawdzHaslo() {
+            const haslo = document.getElementById("haslo").value;
+
+            const strony = {
+                "drg9Oe*J9NXR3T@T": "wybor_arkuszy.html"
+            };
+
+            if (strony[haslo]) {
+                window.location.href = strony[haslo];
+            } else {
+                document.getElementById("komunikat").textContent =
+                    "Nieprawidłowe hasło!";
+            }
+        }
+    </script>
+
+</body>
+</html>
